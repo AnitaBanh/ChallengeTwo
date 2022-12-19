@@ -1,9 +1,9 @@
-/* Define complimentary colors. dark background #310A31, light purple #A7CAB1*/
+/* Define colors. dark background #310A31, light purple #A7CAB1*/
 :root {
-  --lightBg: #310A31;
-  --darkBg:#847996;
-  --darkFont:  #88B7B5;
-  --lightFont:  #F4ECD6;
+  --lightBg: #EEEEF7;
+  --darkBg:#31343D;
+  --darkFont:  #445876;
+  --lightFont:  #92CBCE;
 }
 
 * {
@@ -15,11 +15,11 @@
 
 body {
   margin: 0;
-  background-color: rgb(134, 140, 146);
+  background-color: #EEEEF7;
 }
 
 header {
-  height: 20vh;
+  height: 30vh;
   background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, var(--darkFont), rgb(109, 104, 104) 40%, black 45%);
   padding-top: 10px;
   position: relative;
@@ -29,7 +29,7 @@ header {
   position: absolute;
   bottom: 5px;
   right: 20px;
-  background:var(--lightBg);
+  background:var(--lightFont);
   padding: 5px;
   border: 2px;
 }
@@ -51,9 +51,15 @@ nav a {
 }
 
 nav h1{
-  background-color: var(--lightBg);
-  height:50px
-
+  background-color: var(--lightFont);
+  height:50px;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 section {
@@ -80,29 +86,32 @@ section {
   position: relative;
 }
 
-
+/* individual boxes in the Work section */
 article {
   width: 48%;
   position: relative;
-  border: 2px solid var(--lightBg);
-
+  border: 4px solid var(--lightFont);
   margin: 5px;
 }
 
+/* box with large text over smaller text */
 article div {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   position:absolute;
-  bottom: 15px;
-  left: 20px;
-  background: var(--lightBg);
+  left: 0;
+  bottom: 0;
+  background-color: var(--lightFont);
   padding: 0px;
 }
+article p{
 
+}
 article img {
   width: 100%;
   position: relative;
 }
+
 
 article:first-child{
   width:100%;
@@ -113,7 +122,23 @@ article:first-child img{
   height: 20vh;
 }
 
-/* border around box changes when moused */
+.col2 a{
+  display: inline-flex;
+ justify-content:space-between;
+ padding: 40px;
+ flex-direction: row;
+}
+
+/* border around box changes when user cursor hovers over */
 article:hover{
-  border: 3px solid var(--lightBg);
+  transition: all 0.25s ease-in-out;
+border: 4px solid var(--lightFont);
+  box-shadow:inset 0px 0px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
