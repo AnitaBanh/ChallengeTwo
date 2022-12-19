@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background-color: lightslategray;
+  background-color: rgb(134, 140, 146);
 }
 
 header {
@@ -39,8 +39,8 @@ nav {
  justify-content: space-between; 
  padding: 5px;
  align-items: center;
- background: rgb(53, 52, 52);
- color: white;
+ background: var(--darkBg);
+ color: var(--lightFont);
  padding: 0 20px;
 }
 
@@ -113,6 +113,7 @@ article:first-child img{
   height: 20vh;
 }
 
+/* border around box changes when moused */
 article:hover{
   border: 3px solid var(--lightBg);
 }
