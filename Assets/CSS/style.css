@@ -1,11 +1,13 @@
+/* Define complimentary colors. dark background #310A31, light purple #A7CAB1*/
 :root {
-  --lightBg: rgb(48, 169, 199);
-  --darkFont:  rgb(10, 65, 97);
-  --lightFont:  rgb(81, 109, 126);
+  --lightBg: #310A31;
+  --darkBg:#847996;
+  --darkFont:  #88B7B5;
+  --lightFont:  #F4ECD6;
 }
 
 * {
-  border: 2px dotted red;
+
   font-family: Arial, Helvetica, sans-serif;
   color: var(--darkFont)
 }
@@ -18,7 +20,7 @@ body {
 
 header {
   height: 20vh;
-  background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, purple 40%, rgb(109, 104, 104) 40%, black 45%);
+  background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, var(--darkFont), rgb(109, 104, 104) 40%, black 45%);
 
   position: relative;
 }
@@ -88,6 +90,8 @@ article {
 }
 
 article div {
+  display: flex;
+  align-items: flex-start;
   position:absolute;
   bottom: 15px;
   left: 20px;
