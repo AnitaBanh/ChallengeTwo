@@ -21,7 +21,7 @@ body {
 header {
   height: 20vh;
   background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, var(--darkFont), rgb(109, 104, 104) 40%, black 45%);
-
+  padding-top: 10px;
   position: relative;
 }
 
@@ -85,7 +85,7 @@ article {
   width: 48%;
   position: relative;
   border: 2px solid var(--lightBg);
-  border-radius: 8px;
+
   margin: 5px;
 }
 
