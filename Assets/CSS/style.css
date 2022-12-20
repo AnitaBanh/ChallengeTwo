@@ -7,11 +7,9 @@
 }
 
 * {
-
   font-family: Arial, Helvetica, sans-serif;
   color: var(--darkFont)
 }
-
 
 body {
   margin: 0;
@@ -23,6 +21,7 @@ header {
   background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, var(--darkFont), rgb(109, 104, 104) 40%, black 45%);
   position: relative;
 }
+
 header h1{
   position:right;
   align-content: center;
@@ -136,14 +135,10 @@ article:hover{
   box-shadow:inset 0px 0px 8px;
 }
 
- /*  flex-direction to stacks the main, navbar, and body */
+ /* stack the main, navbar, and body */
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
-  }
-  /* column 2 stacks below column 1 */
-  .col2 {
-    order: 2;
   }
 }
