@@ -21,15 +21,18 @@ body {
 header {
   height: 30vh;
   background: repeating-linear-gradient(-35deg, rgb(33, 10, 77) 35%, var(--darkFont), rgb(109, 104, 104) 40%, black 45%);
-  padding-top: 10px;
   position: relative;
+}
+header h1{
+  position:right;
+  align-content: center;
+  background:var(--lightFont); 
 }
 
 .headerH1 {
   position: absolute;
   bottom: 5px;
   right: 20px;
-  background:var(--lightFont);
   padding: 5px;
   border: 2px;
 }
@@ -94,6 +97,11 @@ article {
   margin: 5px;
 }
 
+article img {
+  width: 100%;
+  position: relative;
+}
+
 /* box with large text over smaller text */
 article div {
   display: flex;
@@ -104,14 +112,6 @@ article div {
   background-color: var(--lightFont);
   padding: 0px;
 }
-article p{
-
-}
-article img {
-  width: 100%;
-  position: relative;
-}
-
 
 article:first-child{
   width:100%;
@@ -132,13 +132,18 @@ article:first-child img{
 /* border around box changes when user cursor hovers over */
 article:hover{
   transition: all 0.25s ease-in-out;
-border: 4px solid var(--lightFont);
+  border: 4px solid var(--lightFont);
   box-shadow:inset 0px 0px 8px;
 }
 
+ /*  flex-direction to stacks the main, navbar, and body */
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
+  }
+  /* column 2 stacks below column 1 */
+  .col2 {
+    order: 2;
   }
 }
