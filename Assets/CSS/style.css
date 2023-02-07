@@ -36,6 +36,9 @@ header h1{
   border: 2px;
 }
 
+#Avatar {
+  size: 102px 128px
+}
 nav {
   display: flex;
  justify-content: space-between; 
