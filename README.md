@@ -13,7 +13,7 @@ The navigation bar at the top links to relevant sections below.
 
 
 ## Credits
-N/A
+Avatar image from Flaticon.com
 
 
 ## License
