@@ -99,7 +99,7 @@ article {
   margin: 5px;
 }
 
-article img {
+article a img {
   width: 100%;
   position: relative;
 }
@@ -120,11 +120,16 @@ article:first-child{
   height: 30vh;
 }
 
-article:first-child img{
+/* article:first-child img{
   height: 20vh;
+} */
+
+.work-sec-img {
+  height: 20vh;
+  vertical-align: top;
 }
 
-.col2 a{
+.col2 a {
   display: inline-flex;
  justify-content:space-between;
  padding: 40px;
